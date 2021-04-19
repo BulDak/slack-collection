@@ -11,14 +11,6 @@ parser.add_argument("-o", "--output", action="store", dest="output", help="Outpu
 parser.set_defaults(output=".")
 args = parser.parse_args()
 
-def set_outputDirectory(path, name):
-    output_path=os.path.join(path)
-    try:
-        os.makedirs(output_path)
-    except:
-        print ("Please delete or move the output directory")
-        raise FileExistsError
-
 def get_attached_url(path, input_type="archive"):
     attached_url=list()
     if input_type=="archive":

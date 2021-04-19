@@ -45,8 +45,7 @@ def get_attached_url(path, input_type="archive"):
     return attached_url
 
 def get_download_url(url):
-    download_url=url.split("?")[0].replace("\\", "").replace("https://files", "https://files-origin")
-    return download_url
+    return url.split("?")[0].replace("\\", "").replace("https://files", "https://files-origin")
 
 def main():
     path=None

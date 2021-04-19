@@ -3,6 +3,7 @@ import sys
 import argparse
 import zipfile
 
+
 parser=argparse.ArgumentParser()
 parser.add_argument("-a", "--archive", action="store", dest="archive", help="Archived file of Slack workspace export")
 parser.add_argument("-d", "--directory", action="store", dest="directory", help="Directory of unarchived Slack workspace export")
